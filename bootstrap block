@@ -2,42 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Block Layout</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Layout with Bootstrap</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .block-1 {
+    .top-light {
       background-color: #e2e6ee;
       height: 80px;
     }
-    .block-2 {
+    .top-dark {
       background-color: #7c8698;
       height: 80px;
     }
-    .block-left {
+    .middle-left {
       background-color: #3d5a99;
       height: 400px;
     }
-.block-right {
-      background-color: #4b556a;
+    .middle-right {
+      background-color: #596580;
       height: 400px;
     }
     .footer {
-      background-color: #4b0c13;
+      background-color: #500814;
       height: 40px;
+    }
+    .container {
+      max-width: 800px;
+      border: 1px solid #ccc;
+      padding-left: 0;
+      padding-right: 0;
     }
   </style>
 </head>
 <body>
-
-  <div class="container-fluid p-0">
-    <div class="block-1 w-100"></div>
-    <div class="block-2 w-100"></div>
+  <div class="container">
     <div class="row g-0">
-      <div class="col-6 block-left"></div>
-      <div class="col-6 block-right"></div>
+      <div class="col-12 top-light"></div>
     </div>
-    <div class="footer w-100"></div>
+    <div class="row g-0">
+      <div class="col-12 top-dark"></div>
+    </div>
+    <div class="row g-0">
+      <div class="col-4 middle-left"></div>
+      <div class="col-8 middle-right"></div>
+    </div>
+    <div class="row g-0">
+      <div class="col-12 footer"></div>
+    </div>
   </div>
-
 </body>
 </html>
