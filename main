@@ -10,56 +10,53 @@
       margin: 0;
       padding: 0;
     }
-
     body, html {
       height: 100%;
     }
-
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
     .block {
       width: 100%;
       height: 80px;
     }
-
     .top-light {
       background-color: #e2e6ee;
     }
-
     .top-dark {
       background-color: #7c8698;
     }
-
     .middle {
       display: flex;
       height: 400px;
     }
-
     .middle-left {
-      flex: 1;
+      width: 30%;
       background-color: #3d5a99;
     }
-
     .middle-right {
-      flex: 1;
-      background-color: #4b556a;
+      width: 70%;
+      background-color: #596580;
     }
-
     .footer {
       width: 100%;
       height: 40px;
-      background-color: #4b0c13;
+      background-color: #500814;
     }
   </style>
 </head>
 <body>
-
-  <div class="block top-light"></div>
-  <div class="block top-dark"></div>
-  <div class="middle">
-    <div class="middle-left"></div>
-    <div class="middle-right"></div>
+  <div class="container">
+    <div class="block top-light"></div>
+    <div class="block top-dark"></div>
+    <div class="middle">
+      <div class="middle-left"></div>
+      <div class="middle-right"></div>
+    </div>
+    <div class="footer"></div>
   </div>
-  <div class="footer"></div>
-
 </body>
 </html>
-
