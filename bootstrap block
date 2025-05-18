@@ -6,6 +6,11 @@
   <title>Block Layout with Bootstrap</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     .top-light {
       background-color: #e2e6ee;
       height: 80px;
@@ -26,29 +31,33 @@
       background-color: #500814;
       height: 40px;
     }
-    .container {
+    .main-container {
       max-width: 800px;
       border: 1px solid #ccc;
       padding-left: 0;
       padding-right: 0;
+      margin: 0 auto;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="row g-0">
+  <div class="main-container">
+    <div class="row g-0 m-0">
       <div class="col-12 top-light"></div>
     </div>
-    <div class="row g-0">
+    <div class="row g-0 m-0">
       <div class="col-12 top-dark"></div>
     </div>
-    <div class="row g-0">
+    <div class="row g-0 m-0">
       <div class="col-4 middle-left"></div>
       <div class="col-8 middle-right"></div>
     </div>
-    <div class="row g-0">
+    <div class="row g-0 m-0">
       <div class="col-12 footer"></div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
