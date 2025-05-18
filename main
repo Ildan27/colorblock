@@ -17,7 +17,7 @@
     .gray {
       background-color: #7c8698;
     }
-    .row {
+    .block-row {
       display: flex;
       height: 400px;
     }
@@ -39,7 +39,7 @@
 
   <div class="block light-gray"></div>
   <div class="block gray"></div>
-  <div class="row">
+  <div class="block-row">
     <div class="left"></div>
     <div class="right"></div>
   </div>
