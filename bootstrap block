@@ -17,3 +17,27 @@
       background-color: #3d5a99;
       height: 400px;
     }
+.block-right {
+      background-color: #4b556a;
+      height: 400px;
+    }
+    .footer {
+      background-color: #4b0c13;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid p-0">
+    <div class="block-1 w-100"></div>
+    <div class="block-2 w-100"></div>
+    <div class="row g-0">
+      <div class="col-6 block-left"></div>
+      <div class="col-6 block-right"></div>
+    </div>
+    <div class="footer w-100"></div>
+  </div>
+
+</body>
+</html>
